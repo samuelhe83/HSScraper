@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS hearthstone;
+CREATE DATABASE IF NOT EXISTS hearthstone;
+
+USE hearthstone;
+
+CREATE TABLE IF NOT EXISTS cards (
+  id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  rarity TEXT NOT NULL,
+  class TEXT NOT NULL,
+  type TEXT NOT NULL,
+  subtype TEXT NOT NULL,
+  cost INTEGER NOT NULL,
+  attack TEXT,
+  hp TEXT,
+  effect TEXT
+
+)
